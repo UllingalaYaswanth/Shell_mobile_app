@@ -3,7 +3,7 @@ import { Card } from "@material-tailwind/react";
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 import { FiCheck, FiX } from "react-icons/fi";
 
-const NotificationCard = ({ raisedBy, raisedTime, vehicleNo, vehicleModel, location, contact }) => {
+const NotificationCard = ({ raisedBy, raisedTime, vehicleNo, vehicleModel, location, contact, contactName }) => {
   return (
     <Card className="flex flex-row md:flex-row items-center p-4 mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg">
       <img
@@ -16,7 +16,8 @@ const NotificationCard = ({ raisedBy, raisedTime, vehicleNo, vehicleModel, locat
         <p className="font-semibold text-xs md:text-base"><strong>Raised Time:</strong> {raisedTime}</p>
         <p className="font-semibold text-xs md:text-base"><strong>Vehicle No:</strong> {vehicleNo}</p>
         <p className="font-semibold text-xs md:text-base"><strong>Vehicle Model:</strong> {vehicleModel}</p>
-        <p className="font-semibold text-xs md:text-base"><strong>Contact:</strong> {contact}</p>
+        <p className="font-semibold text-xs md:text-base"><strong>Contact Name:</strong> {contactName}</p>
+        <p className="font-semibold text-xs md:text-base"><strong>Contact No:</strong> {contact}</p>
         <p className="font-semibold text-xs md:text-base"><strong>Location:</strong> {location}</p>
       </div>
       <div className="flex flex-col space-y-3 mt-2 md:mt-0 md:ml-3">
@@ -41,7 +42,8 @@ const Dashboard = () => {
       vehicleNo: "ABC1234",
       vehicleModel: "Model X",
       location: "Location Z",
-      contact: "9854784310"
+      contact: "9854784310",
+      contactName: "Laurence"
     },
     {
       raisedBy: "Jane Doe",
@@ -49,7 +51,8 @@ const Dashboard = () => {
       vehicleNo: "DEF5678",
       vehicleModel: "Model Y",
       location: "Location A",
-      contact: "9854784310"
+      contact: "9854784310",
+      contactName: "John Wick"
     },
   ];
 
