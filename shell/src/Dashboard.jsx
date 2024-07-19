@@ -12,14 +12,14 @@ const NotificationCard = ({ raisedBy, raisedTime, vehicleNo, vehicleModel, locat
         className="md:w-10 h-10 object-cover mr-3 md:mr-4 mb-4 md:mb-0 rounded"
       />
       <div className="flex-grow">
-        <p className="font-semibold text-xs md:text-base"><strong>Raised by:</strong> {raisedBy}</p>
-        <p className="font-semibold text-xs md:text-base"><strong>Raised Time:</strong> {raisedTime}</p>
-        <p className="font-semibold text-xs md:text-base"><strong>Vehicle No:</strong> {vehicleNo}</p>
-        <p className="font-semibold text-xs md:text-base"><strong>Vehicle Model:</strong> {vehicleModel}</p>
-        <p className="font-semibold text-xs md:text-base"><strong>Contact Name:</strong> {contactName}</p>
-        <p className="font-semibold text-xs md:text-base"><strong>Contact No:</strong> {contact}</p>
-        <p className="font-semibold text-xs md:text-base"><strong>Location:</strong> {location}</p>
-      </div>
+        <p className="tracking-wide text-xxs md:text-sm"><strong className="text-xs md:text-base">Raised by:</strong> {raisedBy}</p>
+        <p className="tracking-wide text-xxs md:text-sm"><strong className="text-xs md:text-base">Raised Time:</strong> {raisedTime}</p>
+        <p className="tracking-wide text-xxs md:text-sm"><strong className="text-xs md:text-base">Vehicle No:</strong> {vehicleNo}</p>
+        <p className="tracking-wide text-xxs md:text-sm"><strong className="text-xs md:text-base">Vehicle Model:</strong> {vehicleModel}</p>
+        <p className="tracking-wide text-xxs md:text-sm"><strong className="text-xs md:text-base">Contact Name:</strong> {contactName}</p>
+        <p className="tracking-wide text-xxs md:text-sm"><strong className="text-xs md:text-base">Contact No:</strong> {contact}</p>
+        <p className="tracking-wide text-xxs md:text-sm"><strong className="text-xs md:text-base">Location:</strong> {location}</p>
+    </div>
       <div className="flex flex-col space-y-3 mt-2 md:mt-0 md:ml-3">
         <div className="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white p-2 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
           <FiCheck className="w-4 h-4 md:w-6 md:h-6" />

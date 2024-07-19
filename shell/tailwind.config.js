@@ -6,7 +6,12 @@ module.exports = {
     "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        'xxs': '0.65rem', // 10px
+        'custom-lg': '1.25rem', // 20px
+      },
+    },
   },
   plugins: [],
 };
